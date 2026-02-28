@@ -1,0 +1,30 @@
+export enum ResponseStatus {
+  Success = 200,
+  BadRequest = 400,
+  Unauthorized = 401,
+  Forbidden = 403,
+  NotFound = 404,
+  ValidationError = 422,
+  ToMany = 429,
+  InternalServerError = 500,
+  NotImplemented = 501,
+  UpdatesRequired = 426,
+  Expired = 410,
+}
+
+export enum ResponseMessage {
+  Success = 'OK',
+  BadRequest = 'Bad Request',
+  Unauthorized = 'Unauthorized',
+  Forbidden = 'Forbidden',
+  NotFound = 'Not Found',
+  ValidationError = 'Unprocessable Entity',
+  TooManyRequests = 'Too Many Requests',
+  InternalServerError = 'Internal Server Error',
+  NotImplemented = 'Not Implemented',
+  AppVersionNotFound = 'App version is required in the headers.',
+  AppVersionInvalid = 'Invalid app version format. Use semantic versioning.',
+  AppPlatform = 'App platform is required in the headers',
+  UpdateRequired = 'Update Required',
+  Expired = 'Expired',
+}
